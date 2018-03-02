@@ -1,3 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  border: none;
+  background-color: white;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  width: 100px;
+  height: 30px;
+  box-shadow: 0 2px 0 0 black;
+}
+
+.title {
+  font-size: 400%;
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 600;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }
