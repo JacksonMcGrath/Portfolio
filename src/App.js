@@ -66,16 +66,34 @@ class App extends Component {
         return (
             <div className="App">
                 <header>
-                    <h1 className="title">Jackson <span className="bold">McGrath</span></h1>
-                    <nav className="sticky-nav"> 
+                    {this.state.render == 'Home' &&
+                    <div className="logo-container">
+                        <h1 class="title">Jackson</h1>
+                        <img className="logo" src="https://i.imgur.com/yf33Phb.png"/>
+                        <h1 class="title bold">McGrath</h1>
+                    </div>
+                    }
+                    {this.state.render == 'Home' && 
+                    <nav className="sticky-nav">
                         <button className="main-nav" onClick={this.toggleHome}>Home</button>
                         <button className="main-nav" onClick={this.toggleProjects}>Projects</button>
                         <button className="main-nav" onClick={this.toggleGraphics}>Graphic Design</button>
                         <button className="main-nav" onClick={this.toggleAbout}>About Me</button>
                         <button className="main-nav" onClick={this.toggleContact}>Contact Me</button>
                     </nav>
+                    }
+                    {this.state.render != 'Home' && 
+                    <nav className="sticky-nav"> 
+                        <img onClick={this.toggleHome} className="logo-small" src="https://i.imgur.com/yf33Phb.png"/>
+                        <button className="main-nav buffer" onClick={this.toggleHome}>Home</button>
+                        <button className="main-nav buffer" onClick={this.toggleProjects}>Projects</button>
+                        <button className="main-nav buffer" onClick={this.toggleGraphics}>Graphic Design</button>
+                        <button className="main-nav buffer" onClick={this.toggleAbout}>About Me</button>
+                        <button className="main-nav buffer" onClick={this.toggleContact}>Contact Me</button>
+                    </nav>
+                    }
                 </header>
-                {this.state.render == 'Home' && <Home projects={this.toggleProjects}/>}
+                {this.state.render == 'Home' && <Home projects={this.toggleProjects} about={this.toggleAbout}/>}
                 {this.state.render == 'Projects' && <Projects/>}
                 {this.state.render == 'Graphics' && <Graphics/>}
                 {this.state.render == 'About' && <About/>}

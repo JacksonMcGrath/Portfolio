@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat';
+  color: #4B5F6D;
 }
 
 nav {
@@ -21,17 +22,66 @@ button {
   font-family: 'Montserrat';
   font-size: 110%;
   font-weight: 400;
+  color: #4B5F6D;
+}
 
+.white-text {
+  color: white;
+}
+
+.logo {
   width: 150px;
+  height: 150px;
+  margin: 20px;
+  transition: width .6s ease, height .6s ease;
+}
+
+.logo-small {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  transition: width .6s ease, height .6s ease;
+}
+
+.logo:hover {
+  width: 160px;
+  height: 160px;
+  transition: width .6s ease, height .6s ease;
+}
+
+.logo-small:hover {
+  width: 90px;
+  height: 90px;
+  transition: width .6s ease, height .6s ease;
+}
+
+.logo-container {
+  display: inline-flex;
+}
+
+.main-nav {
+  width: 170px;
   transition: width .6s ease, font-weight .6s ease;
   height: 30px;
-  box-shadow: 0 2px 0 0 black;
+  box-shadow: 0 2px 0 0 #4B5F6D;
 }
 
 .main-nav:hover {
   font-weight: 500;
   width: 200px;
   transition: width .6s ease, font-weight .6s ease;
+}
+
+.buffer {
+  margin-top:40px;
+}
+
+.sticky-nav {
+  background-color: white;
+}
+
+.nav-adjust {
+  margin-top: 40px;
 }
 
 /*@keyframes nav-over {
@@ -61,6 +111,28 @@ button {
   text-decoration: none;
   font-family: 'Montserrat';
   font-weight: 400;
+  color: #4B5F6D;
+}
+
+.link-white {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: underline;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: #F28430;
+}
+
+.link-white:hover {
+  text-decoration: underline;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: #F28430;
 }
 
 .bold {
@@ -79,9 +151,27 @@ button {
 }
 
 .afya {
-  background-image: url("https://i.imgur.com/oVB4DcH.jpg");
+  background-image: url("https://i.imgur.com/dUpsnGI.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.beat {
+  background-image: url("https://i.imgur.com/PJpQW8Q.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.eatery {
+  background-image: url("https://i.imgur.com/fsk3XyL.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.deepr {
+  background-image: url("https://i.imgur.com/b01uTAJ.jpg");
+  background-position: center;
+  background-size: cover;  
 }
 
 .blur {
@@ -105,7 +195,7 @@ button {
 }
 
 .app-title {
-  font-size: 300%;
+  font-size: 2.5vw;
   margin: 140px 0 0 0;
 }
 
@@ -115,9 +205,9 @@ button {
   left: 10vw;
   height: 40px;
   width: 20vw;
-  box-shadow: none;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: white;
+  box-shadow: 0 -5px 15px 0px rgba(0,0,0,.05);
 }
 
 

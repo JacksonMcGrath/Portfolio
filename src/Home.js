@@ -17,12 +17,19 @@ class Home extends Component {
 		this.props.projects()
 	}
 
+	goToAbout = () => {
+		console.log('goToAbout was hit');
+		this.props.about()
+	}
+
+
+
 	render(){
 
 		return (
 			<div className="home">
 				<div className="buffer-1"></div>
-				<div className="hero-main afya blur">
+				<div className="hero-main afya">
 					<div className="left-half">
 						<img className="app-shot" src="https://i.imgur.com/9TUWrCW.png"/>
 					</div>
@@ -34,14 +41,17 @@ class Home extends Component {
 					</div>
 				</div>
 				<div className="buffer-1"></div>
-								<div className="hero-main afya blur">
+				<div className="hero-main">
 					<div className="left-half">
 						<img className="app-shot" src="https://i.imgur.com/9TUWrCW.png"/>
 					</div>
 					<div className="right-half">
-						<h2 className="app-title">Beat Pad Hero</h2>
+						<h2 className="app-title" onClick={this.goToAbout}>About Me</h2>
+						<h4 className="sub-heading"></h4>
+						<button className="hero-more-btn" onClick={this.goToAbout}>Learn</button>
 					</div>
 				</div>
+				<div className="buffer-1"></div>
 			</div>
 		)
 	}
