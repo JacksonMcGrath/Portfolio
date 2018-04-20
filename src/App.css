@@ -8,6 +8,9 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
 button {
@@ -48,9 +51,73 @@ button {
   font-weight: 300;
 }
 
+.sub-heading {
+  font-weight: 500;
+  font-size: 140%;
+  font-style: italic;
+}
+
+.link {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
 .bold {
   font-weight: 600;
+}
 
+.buffer-1 {
+  width: 100vw;
+  height: 40px;
+}
+
+.hero-main {
+  width: 100vw;
+  height: 460px;
+  display: inline-flex;
+}
+
+.afya {
+  background-image: url("https://i.imgur.com/oVB4DcH.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.blur {
+  -webkit-box-shadow: inset 0px 0px 175px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 175px -5px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 175px -5px rgba(0,0,0,0.75);
+}
+
+.app-shot {
+  width: 40vw;
+  margin: 40px 0 0 0;
+}
+
+.left-half {
+  width: 50vw;
+}
+
+.right-half {
+  width: 50vw;
+  text-align: left;
+}
+
+.app-title {
+  font-size: 300%;
+  margin: 140px 0 0 0;
+}
+
+.hero-more-btn {
+  position: relative;
+  top: 150px;
+  left: 10vw;
+  height: 40px;
+  width: 20vw;
+  box-shadow: none;
+  border-radius: 15px;
+  background-color: white;
 }
 
 

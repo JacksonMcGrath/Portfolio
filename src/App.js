@@ -67,7 +67,7 @@ class App extends Component {
             <div className="App">
                 <header>
                     <h1 className="title">Jackson <span className="bold">McGrath</span></h1>
-                    <nav> 
+                    <nav className="sticky-nav"> 
                         <button className="main-nav" onClick={this.toggleHome}>Home</button>
                         <button className="main-nav" onClick={this.toggleProjects}>Projects</button>
                         <button className="main-nav" onClick={this.toggleGraphics}>Graphic Design</button>
@@ -75,7 +75,7 @@ class App extends Component {
                         <button className="main-nav" onClick={this.toggleContact}>Contact Me</button>
                     </nav>
                 </header>
-                {this.state.render == 'Home' && <Home/>}
+                {this.state.render == 'Home' && <Home projects={this.toggleProjects}/>}
                 {this.state.render == 'Projects' && <Projects/>}
                 {this.state.render == 'Graphics' && <Graphics/>}
                 {this.state.render == 'About' && <About/>}
