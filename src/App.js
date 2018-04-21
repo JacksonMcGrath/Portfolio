@@ -77,7 +77,6 @@ class App extends Component {
                     <nav className="sticky-nav">
                         <button className="main-nav" onClick={this.toggleHome}>Home</button>
                         <button className="main-nav" onClick={this.toggleProjects}>Projects</button>
-                        <button className="main-nav" onClick={this.toggleGraphics}>Graphic Design</button>
                         <button className="main-nav" onClick={this.toggleAbout}>About Me</button>
                         <button className="main-nav" onClick={this.toggleContact}>Contact Me</button>
                     </nav>
@@ -87,7 +86,6 @@ class App extends Component {
                         <img onClick={this.toggleHome} className="logo-small" src="https://i.imgur.com/yf33Phb.png"/>
                         <button className="main-nav buffer" onClick={this.toggleHome}>Home</button>
                         <button className="main-nav buffer" onClick={this.toggleProjects}>Projects</button>
-                        <button className="main-nav buffer" onClick={this.toggleGraphics}>Graphic Design</button>
                         <button className="main-nav buffer" onClick={this.toggleAbout}>About Me</button>
                         <button className="main-nav buffer" onClick={this.toggleContact}>Contact Me</button>
                     </nav>
@@ -96,7 +94,7 @@ class App extends Component {
                 {this.state.render == 'Home' && <Home projects={this.toggleProjects} about={this.toggleAbout}/>}
                 {this.state.render == 'Projects' && <Projects/>}
                 {this.state.render == 'Graphics' && <Graphics/>}
-                {this.state.render == 'About' && <About/>}
+                {this.state.render == 'About' && <About projects={this.toggleProjects} contact={this.toggleContact}/>}
                 {this.state.render == 'Contact' && <Contact/>}
             </div>
         );

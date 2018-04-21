@@ -10,6 +10,11 @@ class Projects extends Component {
 		}
 	}
 
+	goToProjects = () => {
+		console.log('goToProjects was hit');
+		this.props.projects()
+	}
+
 	render(){
 
 		return (

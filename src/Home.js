@@ -10,6 +10,7 @@ class Home extends Component {
 		}
 
 		this.goToProjects = this.goToProjects.bind(this)
+		this.goToAbout = this.goToAbout.bind(this)
 	}
 
 	goToProjects = () => {
@@ -41,14 +42,15 @@ class Home extends Component {
 					</div>
 				</div>
 				<div className="buffer-1"></div>
-				<div className="hero-main">
+				<div className="hero-main about-banner">
 					<div className="left-half">
-						<img className="app-shot" src="https://i.imgur.com/9TUWrCW.png"/>
+						<img className="headshot" src="https://i.imgur.com/Gd6aYjL.png"/>
 					</div>
 					<div className="right-half">
-						<h2 className="app-title" onClick={this.goToAbout}>About Me</h2>
-						<h4 className="sub-heading"></h4>
-						<button className="hero-more-btn" onClick={this.goToAbout}>Learn</button>
+						<h1 class="about-name">About Me</h1>
+						<h4 className="sub-heading white-text">Web Developer  |  Graphic Designer</h4> 
+						<p className="white-text">I love pairing my coding and design skills to build clean, effective web designs.</p>
+						<button className="hero-more-btn-learn" onClick={this.goToAbout}>Learn More</button>
 					</div>
 				</div>
 				<div className="buffer-1"></div>
